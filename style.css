@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 60vw;
+  height: 60vh;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+
+
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.title {
+  font-weight: 600;
+  padding: 0;
+  height: 70px;
+}
+
+.title>h2{
+    display: inline-block;
+    margin: 15px;
+}
+
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.menu{
+    height: 100%;
+    width: 200px;
+    overflow-y: scroll;
+}
+.menu::-webkit-scrollbar {
+    display: none;  
+}
+
+
+.list{
+padding: 0px;
+}
+
+.list-item{
+    padding: 10px 20px;
+    list-style-type: none;
+   cursor: pointer;
+    color: gray;
+}
+
+.active{
+    background-color:#EFF7FE ;
+    border-left: 3px solid blue ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products{
+    height: 100%;
+    width: calc(100% - 200px);
+
+}
+
+
+.swiper{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+}
+.swiper::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+  .card{
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+
+
+    -webkit-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 3px 14px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.cardImg{
+    height: 150px;
+    background-color: #EBEBEB;
+    border-radius: 0 5px;
+}
+.cardImg>img{
+    object-fit:contain;
+
+}
+
+.cardTitle{
+    margin-top: 10px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    padding: 0 20px;
+    margin-bottom:20px
+}
+.cardPrice{
+    background-color: #EBEBEB;
+    margin: 0 10px;
+    padding: 7px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.cardCargoText{
+    margin-top:10px;
+    font-size: 12px;
+    
+}
+
+.cardCargoText > span {
+    margin-left: 10px;
+}
+
+#truck{
+    color: green;
+}
+
+.cardBtn{
+    margin-top: 20px;
+    margin: 10px 10px;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: #0F5FDF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+button:hover{
+    transform: translateY(-4px);
+}
+button:active{
+    transform: translateY(3px);
+}
+
+
+
+
+
+
+
+.toast{
+    width: 300px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+  
+
+}
+
+
+
+.icon{
+    color: green;
+    width: 50px;
+    font-size: 30px;
+    display: grid;
+    place-content: center;
+    flex-grow: 1;
+}
+.toastTextEl{
+    font-size: 15px;
+    flex-grow: 8;
+    
+}
+.toastTitle{
+    padding:0;
+    margin:0;
+    margin-bottom: 5px;
+}
+.toastText{
+    color:#0F5FDF;
+    padding:0;
+    margin:0;
+    cursor: pointer;
+
+}
+.toastQuit{
+    color: white;
+    width: 30px;
+    font-size: 20px;
+    margin-right: 5px;
+    flex-grow: 2;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:750px){
+    .flex-box{
+        flex-direction: column;
+        
+    }
+    .title{
+        height: 50px;
+        font-size: 10px;
+    }
+    .menu{
+        height: 50px ;
+        width: 100%;
+        padding: 0;  
+      
+    }
+    .products{
+        height: calc(100%-100px);
+        width: 100%;
+    }
+    .list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .list-item{
+        white-space: nowrap;
+    
+  
+    }
+    
+    .active{
+    border-bottom: 3px solid blue ;
+    border-left: none;
+
+    }
+  
+    
+    .card{
+        width: 200px;
+        height: 300px;
+    }
+    .cardImg{
+        height: 130px;
+    }
+    .cardTitle{
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        
+    }
+    .cardPrice{
+        margin-top: 10px;
+    }
+    .cardBtn{
+        margin-top: 10px;
+    }
+    .cardCargoText{
+        margin-top: 10px;
+    }
+
+}
